@@ -19,8 +19,8 @@
     "typescript": "^3.5.2"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.release.json",
-    "start": "tsc -p tsconfig.release.json && node ./build/src/main.js",
+    "build": "rm -rf ./build && tsc -p tsconfig.release.json",
+    "start": "rm -rf ./build && tsc -p tsconfig.release.json && node ./build/src/main.js",
     "pub": "npm run build && npm publish"
   },
   "author": "Joshua Ignacio",
