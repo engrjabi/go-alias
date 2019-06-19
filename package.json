@@ -1,9 +1,9 @@
 {
   "name": "go-alias",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Add quick path alias for your local projects directories",
   "bin": {
-    "go-alias": "./run.sh"
+    "go-alias": "./build/src/main.js"
   },
   "engines": {
     "node": ">= 10.13"
@@ -12,19 +12,16 @@
     "@types/commander": "^2.12.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^10.14.8",
-    "jest": "~24.8.0",
     "prettier": "^1.18.2",
-    "rimraf": "^2.6.3",
-    "ts-jest": "^24.0.0",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-microsoft-contrib": "^6.2.0",
-    "tsutils": "^3.14.0",
     "typescript": "^3.5.2"
   },
   "scripts": {
     "build": "tsc -p tsconfig.release.json",
-    "start": "tsc -p tsconfig.release.json && node ./build/src/main.js"
+    "start": "tsc -p tsconfig.release.json && node ./build/src/main.js",
+    "pub": "npm run build && npm publish"
   },
   "author": "Joshua Ignacio",
   "dependencies": {

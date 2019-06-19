@@ -9,9 +9,6 @@ node_modules/
 # Coverage
 coverage
 
-# Transpiled files
-build/
-
 # VS Code
 .vscode
 !.vscode/tasks.js
@@ -28,3 +25,5 @@ build/
 # Misc
 .DS_Store
 goconfig.json
+*.map
+*.tsbuildinfo
