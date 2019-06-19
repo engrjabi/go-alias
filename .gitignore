@@ -27,3 +27,5 @@ coverage
 goconfig.json
 *.map
 *.tsbuildinfo
+.cache
+build/

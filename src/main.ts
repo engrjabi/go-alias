@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import * as commander from 'commander'
 import { buildGoAliasJson } from './buildGoAliasJson'
 import { buildMainAlias } from './buildMainAlias'
