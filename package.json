@@ -2,6 +2,9 @@
   "name": "go-alias",
   "version": "0.1.0",
   "description": "Add quick path alias for your local projects directories",
+  "bin": {
+    "go-alias": "./run.sh"
+  },
   "engines": {
     "node": ">= 10.13"
   },
